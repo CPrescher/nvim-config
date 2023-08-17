@@ -1,4 +1,4 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
+ -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
@@ -12,10 +12,12 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
   use({ 'rose-pine/neovim', as = 'rose-pine',
-  config = function() 
+  config = function()
 	  vim.cmd('colorscheme rose-pine')
   end
   })
+  use('tanvirtin/monokai.nvim')
+  use('shaunsingh/nord.nvim')
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground')
   use('theprimeagen/harpoon')
@@ -39,4 +41,5 @@ return require('packer').startup(function(use)
 	  }
 }
   use('vim-test/vim-test')
+  use('github/copilot.vim')
 end)

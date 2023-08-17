@@ -10,6 +10,22 @@ require('telescope').setup {
     },
     file_ignore_patterns = { ".git" }
   },
+  pickers = {
+    buffers = {
+      sort_lastused = true,
+      theme = "dropdown",
+      initial_mode = "normal",
+      previewer = false,
+      mappings = {
+        i = {
+          ["<c-d>"] = require("telescope.actions").delete_buffer,
+        },
+        n = {
+          ["<c-d>"] = require("telescope.actions").delete_buffer,
+        }
+      }
+    },
+  }
 }
 
 -- Enable telescope fzf native, if installed

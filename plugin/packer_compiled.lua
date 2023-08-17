@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Clemens\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\Clemens\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   harpoon = {
     loaded = true,
     path = "C:\\Users\\Clemens\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
@@ -103,6 +108,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Clemens\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["monokai.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Clemens\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\monokai.nvim",
+    url = "https://github.com/tanvirtin/monokai.nvim"
+  },
+  ["nord.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Clemens\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nord.nvim",
+    url = "https://github.com/shaunsingh/nord.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
