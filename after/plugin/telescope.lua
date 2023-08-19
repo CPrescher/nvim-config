@@ -24,6 +24,12 @@ require('telescope').setup {
         }
       }
     },
+    lsp_document_symbols = {
+      initial_mode = "normal",
+    },
+    lsp_dynamic_workspace_symbols = {
+      initial_mode = "normal",
+    },
   }
 }
 
