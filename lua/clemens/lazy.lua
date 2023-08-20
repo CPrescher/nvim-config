@@ -66,7 +66,11 @@ require('lazy').setup({
         build = ':TSUpdate',
     },
 
+    -- Navigation related Plugins
     'preservim/tagbar',
+    'liuchengxu/vista.vim',
+    'nvim-tree/nvim-tree.lua',
+    'nvim-tree/nvim-web-devicons',
 
     {
         -- Set lualine as statusline
