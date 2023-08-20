@@ -11,6 +11,10 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+-- switch buffers
+vim.keymap.set("n", "<TAB>", "<cmd>bnext<CR>")
+vim.keymap.set("n", "<S-TAB>", "<cmd>bprevious<CR>")
+
 
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
