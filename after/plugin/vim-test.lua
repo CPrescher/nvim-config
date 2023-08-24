@@ -8,6 +8,7 @@ vim.keymap.set('n', '<leader>a', ':w | TestSuite<CR>',
 vim.keymap.set('n', '<leader>l', ':w | TestLast<CR>',
                 { noremap = true, silent = true })
 
--- run in neovim strategy
-vim.g['test#strategy'] = 'neovim'
+-- -- run in neovim strategy
+-- vim.g['test#strategy'] = 'neovim'
+
 
