@@ -25,6 +25,10 @@ require('telescope').setup {
         }
       }
     },
+    oldfiles = {
+      sort_lastused = true,
+      path_display = 'smart',
+    },
     lsp_document_symbols = {
       initial_mode = "normal",
     },
