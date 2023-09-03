@@ -109,4 +109,5 @@ require('lazy').setup({
     'mbbill/undotree',
     'vim-test/vim-test',
     'github/copilot.vim',
+    'tpope/vim-obsession',
 }, {})
