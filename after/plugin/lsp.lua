@@ -64,7 +64,7 @@ local servers = {
             plugins = {
                 pycodestyle = {
                     enabled = true,
-                    maxLineLength = 100
+                    maxLineLength = 120
                 }
             }
         }
