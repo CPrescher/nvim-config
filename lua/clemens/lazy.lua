@@ -1,4 +1,3 @@
-
 require('lazy').setup({
     -- Git related plugins
     'tpope/vim-fugitive',
@@ -14,7 +13,7 @@ require('lazy').setup({
 
             -- Useful status updates for LSP
             -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-            { 'j-hui/fidget.nvim', tag = 'legacy', opts = {} },
+            { 'j-hui/fidget.nvim',       tag = 'legacy', opts = {} },
 
             -- Additional lua configuration, makes nvim stuff amazing!
             'folke/neodev.nvim',
@@ -101,6 +100,9 @@ require('lazy').setup({
     -- install Nvimtree
     'nvim-tree/nvim-tree.lua',
     'nvim-tree/nvim-web-devicons',
+
+    -- start screen
+    'mhinz/vim-startify',
 
     -- commenting
     'preservim/nerdcommenter',

@@ -1,17 +1,12 @@
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
--- empty setup using defaults
-require("nvim-tree").setup()
-
--- OR setup with some options
-
 local HEIGHT_RATIO = 0.7 -- You can change this
 local WIDTH_RATIO = 0.7  -- You can change this too
 
 require("nvim-tree").setup({
-  disable_netrw = true,
-  hijack_netrw = true,
+  disable_netrw = false,
+  hijack_netrw = false,
   respect_buf_cwd = true,
   sync_root_with_cwd = true,
   view = {
