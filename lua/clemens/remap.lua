@@ -12,6 +12,9 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("n", "<TAB>", "<cmd>bnext<CR>")
 vim.keymap.set("n", "<S-TAB>", "<cmd>bprevious<CR>")
 
+-- close buffer
+vim.keymap.set("n", "<leader>q", "<cmd>bd<CR>")
+vim.keymap.set("n", "<leader>Q", "<cmd>bd!<CR>")
 
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
@@ -27,4 +30,26 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+
+-- Navigation between windows
+vim.keymap.set("n", "<C-h>", "<C-w>h")
+vim.keymap.set("n", "<C-j>", "<C-w>j")
+vim.keymap.set("n", "<C-k>", "<C-w>k")
+vim.keymap.set("n", "<C-l>", "<C-w>l")
+
+-- Resize windows
+vim.keymap.set("n", "<C-Up>", ":resize +2<CR>")
+vim.keymap.set("n", "<C-Down>", ":resize -2<CR>")
+vim.keymap.set("n", "<C-Left>", ":vertical resize +2<CR>")
+vim.keymap.set("n", "<C-Right>", ":vertical resize -2<CR>")
+
+-- save
+vim.keymap.set("n", "<C-s>", ":w<CR>")
+vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>")
+vim.keymap.set("v", "<C-s>", "<Esc>:w<CR>")
+
+-- quit
+vim.keymap.set("n", "<C-q>", ":q<CR>")
+vim.keymap.set("i", "<C-q>", "<Esc>:q<CR>")
+vim.keymap.set("v", "<C-q>", "<Esc>:q<CR>")
 

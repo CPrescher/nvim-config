@@ -69,8 +69,6 @@ require('lazy').setup({
     -- Navigation related Plugins
     'preservim/tagbar',
     'liuchengxu/vista.vim',
-    'nvim-tree/nvim-tree.lua',
-    'nvim-tree/nvim-web-devicons',
 
     {
         -- Set lualine as statusline
@@ -100,10 +98,15 @@ require('lazy').setup({
     -- "gc" to comment visual regions/lines
     { 'numToStr/Comment.nvim', opts = {} },
 
-    -- Styles
-    'shaunsingh/nord.nvim',
-    'rose-pine/neovim',
+    -- install Nvimtree
+    'nvim-tree/nvim-tree.lua',
+    'nvim-tree/nvim-web-devicons',
 
+    -- commenting
+    'preservim/nerdcommenter',
+
+    -- Styles
+    'rose-pine/neovim',
     'theprimeagen/harpoon',
 
     'mbbill/undotree',
