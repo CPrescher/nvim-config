@@ -94,8 +94,19 @@ require('lazy').setup({
         },
     },
 
-    -- "gc" to comment visual regions/lines
-    { 'numToStr/Comment.nvim', opts = {} },
+    -- "<leader>c" to comment visual regions/lines
+    {
+        "numToStr/Comment.nvim",
+        keys = {
+            { "gc", mode = { "n", "v" }, desc = "Comment toggle linewise" },
+            { "gb", mode = { "n", "v" }, desc = "Comment toggle blockwise" },
+        },
+        opts = function()
+            local commentstring_avail, commentstring = pcall(require,
+                "ts_context_commentstring.integrations.comment_nvim")
+            return commentstring_avail and commentstring and { pre_hook = commentstring.create_pre_hook() } or {}
+        end,
+    },
 
     -- install Nvimtree
     'nvim-tree/nvim-tree.lua',
@@ -104,10 +115,34 @@ require('lazy').setup({
     -- start screen
     'mhinz/vim-startify',
 
-    -- commenting
-    'preservim/nerdcommenter',
+    -- using a floating terminal
+    {
+        "akinsho/toggleterm.nvim",
+        opts = {
+            highlights = {
+                Normal = { link = "Normal" },
+                NormalNC = { link = "NormalNC" },
+                NormalFloat = { link = "NormalFloat" },
+                FloatBorder = { link = "FloatBorder" },
+                StatusLine = { link = "StatusLine" },
+                StatusLineNC = { link = "StatusLineNC" },
+                WinBar = { link = "WinBar" },
+                WinBarNC = { link = "WinBarNC" },
+            },
+            size = 10,
+            on_create = function()
+                vim.opt.foldcolumn = "0"
+                vim.opt.signcolumn = "no"
+            end,
+            open_mapping = [[<F7>]],
+            shading_factor = 2,
+            direction = "float",
+            float_opts = { border = "rounded" },
+        },
+    },
 
-    -- Styles
+    --
+    -- -- Styles
     'rose-pine/neovim',
     'theprimeagen/harpoon',
 
