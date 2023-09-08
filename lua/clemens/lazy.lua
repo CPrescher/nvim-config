@@ -95,18 +95,7 @@ require('lazy').setup({
     },
 
     -- "<leader>c" to comment visual regions/lines
-    {
-        "numToStr/Comment.nvim",
-        keys = {
-            { "gc", mode = { "n", "v" }, desc = "Comment toggle linewise" },
-            { "gb", mode = { "n", "v" }, desc = "Comment toggle blockwise" },
-        },
-        opts = function()
-            local commentstring_avail, commentstring = pcall(require,
-                "ts_context_commentstring.integrations.comment_nvim")
-            return commentstring_avail and commentstring and { pre_hook = commentstring.create_pre_hook() } or {}
-        end,
-    },
+    "numToStr/Comment.nvim",
 
     -- install Nvimtree
     'nvim-tree/nvim-tree.lua',
@@ -134,7 +123,7 @@ require('lazy').setup({
                 vim.opt.foldcolumn = "0"
                 vim.opt.signcolumn = "no"
             end,
-            open_mapping = [[<F7>]],
+            open_mapping = [[<>]],
             shading_factor = 2,
             direction = "float",
             float_opts = { border = "rounded" },
