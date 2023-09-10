@@ -108,6 +108,8 @@ require('lazy').setup({
     {
         "akinsho/toggleterm.nvim",
         opts = {
+            -- set terminal to powershell
+            shell = 'powershell.exe',
             highlights = {
                 Normal = { link = "Normal" },
                 NormalNC = { link = "NormalNC" },
@@ -130,7 +132,7 @@ require('lazy').setup({
         },
     },
 
-    --
+
     -- -- Styles
     'rose-pine/neovim',
     'theprimeagen/harpoon',
