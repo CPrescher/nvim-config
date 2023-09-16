@@ -5,11 +5,10 @@ require('Comment').setup {
         line = "<leader>c",
         block = "<leader>C",
     },
-    
-    mappings = {
-        basic = true,
-        extra = false,
-        extended = false,
+    opleader = {
+        line = "<leader>c",
+        block = "<leader>C",
     },
-}
 
+}
+--
