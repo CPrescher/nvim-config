@@ -24,18 +24,18 @@ require('lualine').setup {
         }
     },
     sections = {
-        lualine_a = {'mode'},
-        lualine_b = {'filename'},
+        lualine_a = { 'mode' },
+        lualine_b = { 'filename' },
         lualine_c = {},
-        lualine_x = {'branch', 'filetype'},
-        lualine_y = {'progress'},
-        lualine_z = {'location'}
+        lualine_x = { 'branch', 'filetype' },
+        lualine_y = { 'progress' },
+        lualine_z = { 'location' }
     },
     inactive_sections = {
         lualine_a = {},
         lualine_b = {},
-        lualine_c = {'filename', 'diff'},
-        lualine_x = {'location'},
+        lualine_c = { 'filename', 'diff' },
+        lualine_x = { 'location' },
         lualine_y = {},
         lualine_z = {}
     },
@@ -44,11 +44,11 @@ require('lualine').setup {
         lualine_b = {
             {
                 'buffers',
-                show_filename_only = true,   -- Shows shortened relative path when set to false.
-                hide_filename_extension = true,   -- Hide filename extension when set to true.
-                show_modified_status = true, -- Shows indicator when the buffer is modified.
+                show_filename_only = true,      -- Shows shortened relative path when set to false.
+                hide_filename_extension = true, -- Hide filename extension when set to true.
+                show_modified_status = true,    -- Shows indicator when the buffer is modified.
 
-                mode = 2, -- 0: Shows buffer name
+                mode = 2,                       -- 0: Shows buffer name
                 -- 1: Shows buffer index
                 -- 2: Shows buffer name + buffer index
                 -- 3: Shows buffer number
@@ -76,4 +76,3 @@ require('lualine').setup {
         'fugitive',
     }
 }
-

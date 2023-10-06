@@ -89,4 +89,3 @@ function goimports(timeoutms)
         vim.lsp.buf.execute_command(action)
     end
 end
-

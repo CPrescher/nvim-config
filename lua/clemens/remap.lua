@@ -52,4 +52,3 @@ vim.keymap.set("v", "<C-s>", "<Esc>:w<CR>")
 vim.keymap.set("n", "<C-q>", ":q<CR>")
 vim.keymap.set("i", "<C-q>", "<Esc>:q<CR>")
 vim.keymap.set("v", "<C-q>", "<Esc>:q<CR>")
-
